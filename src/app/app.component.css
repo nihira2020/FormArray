@@ -1,0 +1,14 @@
+.mat-form-field {
+    width: 100%;
+}
+h2{
+    text-align: center;
+    color: darkgreen;
+}
+.mat-card{
+    width: 50%;
+}
+a{
+    color: #fff !important;
+    margin: 5px;
+}
