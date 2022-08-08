@@ -1,0 +1,53 @@
+<h2>Form Builder</h2>
+
+<br>
+
+<!-- <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput [formControl]="_control">
+  </mat-form-field> -->
+
+  
+
+  <!-- <form [formGroup]="_group" (ngSubmit)="Getvalue()">
+    <mat-form-field appearance="fill">
+        <mat-label>User name</mat-label>
+        <input matInput formControlName="username">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+      <div class="example-button-row" style="margin-top: 5px">
+        <button mat-raised-button color="primary" >Get Values</button> |
+        <button mat-raised-button color="primary" (click)="Setvalue()">Set Values</button> 
+      </div>
+  </form> -->
+
+  
+  <!-- <div *ngFor="let item of _array.controls">
+    <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput [formControl]="item">
+      </mat-form-field>
+  </div> -->
+
+  <div *ngFor="let item of _arraywithgroup.controls;let i=index">
+    <div [formGroup]="item">
+        <h3>Part {{i+1}}</h3>
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>User Name</mat-label>
+            <input matInput formControlName="username">
+          </mat-form-field>
+    </div>
+  </div>
+  <div class="example-button-row" style="margin-top: 5px">
+    <button mat-raised-button color="primary" (click)="Getvalue()">Get Values</button> |
+    <button mat-raised-button color="primary" (click)="Setvalue()">Set Values</button> 
+  </div>
+
+
