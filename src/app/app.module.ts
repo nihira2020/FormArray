@@ -12,12 +12,16 @@ import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { BuilderComponent } from './builder/builder.component';
+import { DatatableComponent } from './datatable/datatable.component';
+import {HttpClientModule} from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    BuilderComponent
+    BuilderComponent,
+    DatatableComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { BuilderComponent } from './builder/builder.component';
     MatButtonModule,
     MatSelectModule,
     MatCardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

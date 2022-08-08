@@ -1,0 +1,15 @@
+{
+  "users":[
+      { "code": "202201", "name": "Smith", "salary": 10000, "role": "admin" },
+      { "code": "202202", "name": "Walsh", "salary": 20000, "role": "user" },
+      { "code": "202203", "name": "dillon", "salary": 10000, "role": "superuser" },
+      { "code": "202204", "name": "kevin", "salary": 10000, "role": "user" },
+      { "code": "202205", "name": "robert", "salary": 30000, "role": "superuser" },
+      { "code": "202206", "name": "jhonson", "salary": 20000, "role": "superuser" },
+      { "code": "202207", "name": "symonds", "salary": 10000, "role": "user" },
+      { "code": "202208", "name": "sourabh", "salary": 50000, "role": "user" },
+      { "code": "202209", "name": "jackson", "salary": 10000, "role": "user" },
+      { "code": "202210", "name": "williams", "salary": 60000, "role": "aserdmin" },
+      { "code": "202211", "name": "williamson", "salary": 60000, "role": "aserdmin" }
+  ]
+}
